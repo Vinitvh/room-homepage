@@ -13,15 +13,63 @@
     <title>Frontend Mentor | Room homepage</title>
   </head>
   <body>
-    <nav class="bg-emerald-300 absolute top-0 left-0 w-full">
-      <div class="flex items-center justify-center">
-        <button class="md:hidden">
-          <img src="../images/icon-hamburger.svg" alt="Hamburger Menu Button" />
-        </button>
-        <a href="#">
-          <img src="../images/logo.svg" alt="Logo" />
-        </a>
+    <div class="h-3/6 w-full grid grid-cols-1 md:grid-cols-3 gap-0">
+      <div class="md:col-start-1 md:col-span-2">
+        <img
+          src="../images/desktop-image-hero-1.jpg"
+          alt="Slider Image 1"
+          class="md:h-[25rem] md:w-5/6"
+        />
+        <div class="flex items-center h-6 absolute md:top-0 md:left-0">
+          <img
+            src="../images/icon-hamburger.svg"
+            alt="Hamburger MenuButton"
+            class="md:hidden"
+          />
+          <img src="../images/logo.svg" alt="Logo" class="" />
+          <ul class="flex">
+            <li><a href="#" class="navbar__link">Home</a></li>
+            <li><a href="#" class="navbar__link">Shop</a></li>
+            <li><a href="#" class="navbar__link">About</a></li>
+            <li><a href="#" class="navbar__link">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </nav>
+      <div class="content flex flex-col items-center">
+        <h1 class="text-3xl">Discover innovative ways to decorate</h1>
+        <p>
+          We provide unmatched quality,comfort, and style for property owners
+          across the country. Our experts combine form and function in bringing
+          your vision to life. Create a room in your own style with our
+          collection and make your property a reflection of you and what you
+          love.
+        </p>
+      </div>
+    </div>
+    <div
+      class="grid grid-cols-1 grid-row-1 md:grid-cols-11 md:grid-row-1 w-full"
+    >
+      <img
+        src="../images/image-about-dark.jpg"
+        alt="Dark About Image"
+        class="h-full w-full md:col-span-3 md:col-start-1 md:h-[11rem]"
+      />
+      <div class="md:col-span-5 px-12 py-5">
+        <h1 class="text-2xl uppercase ">about our furniture</h1>
+        <p class="text-sm text-primary">
+          Our multifunctional collection blends design and function to suit your
+          individual taste.Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </div>
+      <img
+        src="../images/image-about-light.jpg"
+        alt="Light About Image"
+        class="h-full w-full md:col-span-3 md:h-[11rem]"
+      />
+    </div>
   </body>
 </html>
